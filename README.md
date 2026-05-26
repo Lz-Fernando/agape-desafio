@@ -53,13 +53,13 @@ DB_USERNAME=seu_usuario_do_postgres
 DB_PASSWORD=sua_senha_do_postgres
 ```
 
-### 7. Gere a chave da aplicação
+### 6. Gere a chave da aplicação
 
 ```bash
 php artisan key:generate
 ```
 
-### 8. Rode as migrações
+### 7. Rode as migrações
 
 Este comando criará todas as tabelas no banco de dados e as populará com os dados iniciais *(seeders)*:
 
