@@ -1,0 +1,56 @@
+/* CABEÇALHO DA PÁGINA */
+.cabecalho-pagina h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* BARRA DE FERRAMENTAS DO RELATÓRIO */
+.barra-ferramentas-relatorio {
+    background-color: #f0f0f0;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.form-relatorio {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* ÁREA DE BUSCA */
+.grupo-busca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grupo-busca label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.input-select-grande {
+    width: 450px; 
+    text-transform: uppercase;
+}
+
+/* BOTÃO IMPRIMIR */
+.btn-imprimir {
+    padding: 6px 20px;
+    font-size: 0.9rem;
+}
+
+.ts-control {
+    border: 2px solid #000 !important;
+    border-radius: 0 !important;
+    padding: 8px !important;
+    width: 450px !important;
+}
+
+.ts-control input {
+    box-shadow: none !important;
+}
