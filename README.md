@@ -24,13 +24,34 @@ git clone https://github.com/Lz-Fernando/agape-desafio.git
 cd agape-desafio
 ```
 
-### 3. Instale as dependências do Back-end (PHP)
+### 3. Configure o arquivo `php.ini`
+
+Após instalar o PHP, localize o arquivo `php.ini` da sua instalação e habilite as extensões necessárias removendo o `;` do início das linhas abaixo *(caso estejam comentadas)*:
+
+```ini
+extension=pdo_pgsql
+extension=pgsql
+extension=fileinfo
+extension=openssl
+extension=mbstring
+extension=zip
+```
+
+Depois de salvar o arquivo, reinicie o terminal ou o servidor local para aplicar as alterações.
+
+> 💡 Dica: Você pode descobrir o caminho do `php.ini` executando o comando abaixo no terminal:
+>
+> ```bash
+> php --ini
+> ```
+
+### 4. Instale as dependências do Back-end (PHP)
 
 ```bash
 composer install
 ```
 
-### 4. Configure o ambiente
+### 5. Configure o ambiente
 
 Crie uma cópia do arquivo de configuração de exemplo:
 
@@ -38,7 +59,7 @@ Crie uma cópia do arquivo de configuração de exemplo:
 cp .env.example .env
 ```
 
-### 5. Configure o Banco de Dados (PostgreSQL)
+### 6. Configure o Banco de Dados (PostgreSQL)
 
 - Abra o seu SGBD *(ex: pgAdmin ou DBeaver)*.
 - Crie um banco de dados vazio chamado `agape_desafio`.
@@ -67,9 +88,11 @@ Este comando criará todas as tabelas no banco de dados e as populará com os da
 php artisan migrate --seed
 ```
 
+---
+
 ## 💻 Executando a Aplicação
 
-Para visualizar o projeto funcionando perfeitamente, abra um terminal na pasta do projeto.
+Para visualizar o projeto funcionando perfeitamente, abra o terminal na pasta do projeto.
 
 ### Terminal — Inicia o servidor local do Laravel
 
@@ -77,10 +100,10 @@ Para visualizar o projeto funcionando perfeitamente, abra um terminal na pasta d
 php artisan serve
 ```
 
+---
+
 ## ✅ Acesso ao sistema
 
 Após iniciar os serviços, o projeto estará disponível em:
 
 👉 `http://localhost:8000`
-
----
